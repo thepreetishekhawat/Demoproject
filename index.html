@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions Consulting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sticky Navbar -->
+    <div class="sticky">
+        <span>Sen viverra eu arcu sed libero iaculis turpis sed enim. Ut
+            platea id aliquam orci ullamcorper.
+            <span class="space">Register now</span>
+        </span>
+        <span class="close-btn" onclick="closeBtn()">✖</span>
+    </div>
+    <header>
+        <!-- Hero Section -->
+        <nav id="navbar" class="slide1-navbar">
+            <div class="logo">
+            </div>
+            <div class="right-side-navbar">
+                <ul class="nav-links">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">ADMISSION COUNSELING</a></li>
+                    <li><a href="#">RESEARCH MENTORSHIP</a></li>
+                    <li><a href="#">RESOURCES</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="nav-btn"> <button class="contact">
+                        <span>Talk to an advisor</span>
+                    </button></div>
+
+            </div>
+        </nav>
+        <div class="hero">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="herovideo.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <h2>The #1 rated<br>admissions consulting firm</h2>
+                <p>
+                    Gain admission to your top choice <br>schools with
+                    AcceptU
+                </p>
+                <div class="hero-button">
+                    <button>Talk to an advisor</button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="tagline">
+        <span>AS FEATURED IN</span>
+        <div class="tagline-container">
+            <p class="child child1"></p>
+            <p class="child child2">THE WALL STREET JOURNAL</p>
+            <p class="child child3"></p>
+            <p class="child child4"></p>
+            <p class="child"><b>USA TODAY</b></p>
+            <p class="child child6"><img src="./images/ap.png" class="child6" width="30" alt=""> <span
+                    class="ap">Associated Press</span></p>
+            <p class="child daily-beast">DAILY BEAST</p>
+            <p class="child bloomberg">Bloomberg</p>
+        </div>
+    </div>
+    <!-- Animated Numbers Section -->
+
+    <div class="container">
+        <p>For 15 years, AcceptU has been the trusted source for
+            <br>admissions consulting, with more 5-star reviews
+            than any other <br> provider and thousands of students
+            admitted to top schools
+        </p>
+
+        <div class="stats">
+            <div class="left-side-stats">
+                <div class="stat">
+                    <div class="number" data-value="7600"></div>
+                    <p>students admitted</p>
+                </div>
+            </div>
+            <div class="right-side-stats">
+                <div class="stat">
+                    <div class="number" data-value="400"></div>
+                    <p>5-star verified, client reviews</p>
+                </div>
+                <div class="stat">
+                    <div class="number" data-value="91"></div>
+                    <p>admitted to their top choice</p>
+                </div>
+                <div class="stat">
+                    <div class="number" data-value="4"></div>
+                    <p>higher rates of admission</p>
+                </div>
+                <div class="stat">
+                    <div class="number" data-value="44"></div>
+                    <p>admitted in an early round</p>
+                </div>
+                <div class="stat">
+                    <div class="number" data-value="98"></div>
+                    <p>would refer others to AcceptU</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="button">View our results</a>
+    </div>
+    <div class="conatiner1">
+        <div class="cards">
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+        </div>
+    </div>
+    <script>
+        function closeBtn() {
+            // Select the sticky element
+            const stickyElement = document.querySelector('.sticky');
+            stickyElement.classList.add('display-none');
+        }
+
+    </script>
+</body>
+
+</html>

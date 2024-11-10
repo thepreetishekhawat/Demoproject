@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&family=Oranienbaum&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: chivo;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.display-none {
+    transition: all .2s;
+    display: none;
+}
+
+/* Navbar */
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 15px 111px;
+    gap: 0px;
+    z-index: 13;
+    justify-content: space-between;
+    opacity: 0px;
+    background: #00234B;
+    transition: all .2s;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    text-align: right;
+    position: absolute;
+    right: 110px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sticky span {
+    color: white;
+}
+
+.sticky span .space {
+    margin-left: 6px;
+    color: #359eea;
+}
+
+/* slide1-Navbar Styles */
+.slide1-navbar {
+    position: absolute;
+    top: 0;
+    z-index: 12;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: all 0.8s;
+}
+
+.logo {
+    width: 120px;
+    height: 68px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+    background-image: url(./logo.png);
+
+}
+
+
+.highlight {
+    color: #ffc107;
+    /* Yellow highlight */
+}
+
+.slide1-navbar .nav-links {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    width: fit-content;
+    gap: 30px;
+}
+
+.slide1-navbar .nav-links a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+    margin-top: 20%;
+    color: white;
+    margin-left: -1%;
+    margin-right: -16%;
+}
+
+
+.slide1-navbar .nav-links a:hover {
+    color: #ffc107;
+}
+
+.navbar-toggle {
+    font-size: 24px;
+    margin-left: auto;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.right-side-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact {
+    background-color: #f29102;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    color: white;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.hero-content {
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+
+.hero-content h2 {
+    letter-spacing: -2px;
+    font-family: "Anybody", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: left;
+    font-size: 4rem;
+    font-stretch: ultra-expanded;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.hero-content p {
+    text-align: left;
+    font-size: 1.5rem;
+    max-width: 800px;
+    line-height: 1.2;
+    color: white;
+}
+
+
+.hero-button button {
+    display: flex;
+    gap: 40px;
+    margin-top: 5%;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #f29102;
+    padding: 2% 3%;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.tagline {
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    margin-top: 0;
+    padding: 10px 70px;
+    background-color: #2dabca;
+}
+
+.tagline>span {
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 140px;
+    vertical-align: middle;
+}
+
+.tagline .tagline-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 25px;
+}
+
+.tagline .tagline-container .child {
+    width: max-content;
+    font-size: small;
+    vertical-align: middle;
+    height: 20px;
+
+
+}
+
+.tagline .tagline-container .child1 {
+    background-image: url(./The\ New\ York\ Times\ Logo.png);
+    background-size: 170px;
+    width: 170px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.tagline .tagline-container .child2 {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    margin-top: 4px;
+    font-size: 16px;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.tagline .tagline-container .child3 {
+    background-image: url(./npr-logo.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    width: 60px;
+}
+
+.tagline .tagline-container .child4 {
+    background-image: url(./boston-globe.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    width: 140px;
+}
+
+.tagline .tagline-container .child .child6 {
+    vertical-align: middle;
+}
+
+.tagline .tagline-container .child .ap {
+    font-size: 11px;
+
+}
+
+.daily-beast {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-stretch: extra-condensed;
+}
+
+.bloomberg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.container {
+    font-size: 20px;
+    color: #222;
+    width: 85%;
+    font-weight: 500;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left-side-stats {
+    width: 40%;
+}
+
+.left-side-stats .stat .number {
+    font-size: 98px;
+}
+
+.right-side-stats {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.right-side-stats .stat:nth-child(3) {
+
+    margin-bottom: 20px;
+}
+
+.stat {
+    text-align: left;
+    width: 180px;
+}
+
+.number {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    font-stretch: extra-condensed;
+}
+
+.stat p {
+    font-size: medium;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: black;
+    background-color: #aacff5;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all .3s;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #93bde7;
+
+}
+
+/* CSS Animation for count-up effect */
+.number[data-value="7600"]::after {
+    animation: count-up 3s linear forwards;
+    content: "7600+";
+}
+
+.number[data-value="400"]::after {
+    animation: count-up 3s linear forwards;
+    content: "400+";
+}
+
+.number[data-value="91"]::after {
+    animation: count-up 3s linear forwards;
+    content: "91%";
+}
+
+.number[data-value="4"]::after {
+    animation: count-up 3s linear forwards;
+    content: "4x";
+}
+
+.number[data-value="44"]::after {
+    animation: count-up 3s linear forwards;
+    content: "44%";
+}
+
+.number[data-value="98"]::after {
+    animation: count-up 3s linear forwards;
+    content: "98%";
+}
+
+@keyframes count-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.img-box {
+    width: 600px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    background: url(img1.jpeg);
+    background-size: cover;
+    background-position: center center;
+    transition: width 0.5s;
+}
+
+.img-box:nth-child(2) {
+
+    background: url(img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:hover {
+    width: 900px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .sticky {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: right;
+    }
+
+    .close-btn {
+        right: 15px;
+    }
+
+    .hero {
+        align-items: end;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-button button {
+        display: flex;
+        gap: 40px;
+        margin-top: 15%;
+    }
+
+    .tagline .tagline-container {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .tagline {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .stats {
+        justify-content: start;
+        gap: 26px;
+    }
+
+    .right-side-stats {
+        gap: 2px;
+    }
+
+    .right-side-stats .stat {
+        text-align: left;
+        width: 50px;
+    }
+
+    .left-side-stats .stat .number {
+        font-size: 50px;
+    }
+
+    .right-side-stats .stat .number {
+        font-size: 20px;
+    }
+
+    .right-side-stats .stat p {
+        font-size: 10px;
+
+    }
+
+    .left-side-stats .stat p {
+        font-size: 13px;
+
+    }
+
+    .button {
+        font-size: 11px;
+    }
+
+    .img-box {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 75vh;
+    }
+
+    .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .slide1-navbar {
+        padding: 0 15px;
+    }
+
+    .right-side-navbar {
+        gap: 5px;
+
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .slide1-navbar .nav-links {
+        gap: 8px;
+        font-size: 10px;
+    }
+
+
+}
